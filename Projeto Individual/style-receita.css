@@ -73,6 +73,12 @@ header li, a {
     background-color: rgba(0, 136, 169, 0.8);
 }
 
+@media only screen and (max-width: 1000px) {
+    .nav-sociais {
+      display: none;
+    }
+  }
+
 /*Corpo*/
 
 .conteudo {
@@ -91,7 +97,7 @@ header li, a {
 }
 
 .conteudo-titulo .informacoes button {
-    height: 30px;
+    height: 1.5vw;
     align-items: center;
     background-color: rgb(255 228 153 / 66%);
     border: 0;
@@ -104,8 +110,8 @@ header li, a {
     justify-content: center;
     overflow: hidden;
     padding: 0px;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 1vw;
+    padding-right: 1vw;
     text-align: center;
 }
 
@@ -169,8 +175,8 @@ header li, a {
 
 /*Sugestão de Receitas*/
 
-.conteudo-receitas-titulo {
-
+.conteudo-receitas-titulo, .conteudo-preparacao-titulo {
+    font-size: 2vw;
 }
 
 /*Cards*/
@@ -186,7 +192,7 @@ header li, a {
 .receitas-card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    width: 100%;
+    width: minmax(19.2vw, 20px);
     border-radius: 6px;
 }
 
@@ -205,13 +211,18 @@ header li, a {
     padding: 2px 16px;
 }
 
+.receitas-card .container h4 {
+    font-size: 0.9vw;
+}
+
 .receitas-card .container p {
     font-family: 'Karla', sans-serif;
+    font-size: 0.8vw;
     max-width: 100%;
 }
 
 .card-button {
-    height: 35px;
+    height: 1.8vw;
     align-items: center;
     background-color: #0A66C2;
     border: 0;
@@ -219,15 +230,15 @@ header li, a {
     box-sizing: border-box;
     color: #ffffff;
     display: inline-flex;
-    font-size: 12px;
+    font-size: 0.6vw;
     font-weight: 550;
     justify-content: center;
     overflow: hidden;
     padding: 0px;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 1vw;
+    padding-right: 1vw;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 0.5vw;
     cursor: pointer;
 }
 
@@ -280,7 +291,7 @@ footer {
 }
 
 .footer-content .footer-center .footer-center-title {
-    font-size: 2.1rem;
+    font-size: 2vw;
     font-weight: 500;
     text-transform: capitalize;
     line-height: 3rem;
@@ -317,15 +328,21 @@ footer {
 .footer-content .footer-right .socials a {
     text-decoration: none;
     color: azure;
-    padding: 10px;
+    padding: 0.5vw;
 }
 
 .footer-content .footer-right .socials a i {
-    font-size: 1.5rem;
-    width: 25px;
+    font-size: 1.5vw;
+    width: 1vw;
     transition: color .4s ease;
 }
 
 .footer-content .footer-right .socials a:hover i {
     color: rgb(162, 173, 173);
+}
+
+@media only screen and (max-width: 1000px) {
+    .footer-content-img {
+        display: none;
+    }
 }

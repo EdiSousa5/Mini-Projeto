@@ -33,7 +33,7 @@ header {
 header li, a {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: max(0.8vw, 10px);
+  font-size: 15px;
   color: #24252A;
   text-decoration: none;
 }
@@ -56,8 +56,8 @@ header li, a {
 }
 
 .nav-button {
-  font-size: max(0.8vw, 10px);
-  padding: 0.35vw 0.4vw;
+  font-size: 12px;
+  padding: 8.5px 10px;
   color: azure;
   background-color: rgba(0, 136, 169, 1);
   border: none;
@@ -68,6 +68,12 @@ header li, a {
 
 .nav-button:hover {
   background-color: rgba(0, 136, 169, 0.8);
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav-sociais {
+    display: none;
+  }
 }
 
 /*Pesquisa de Receitas*/
@@ -176,7 +182,7 @@ header li, a {
   overflow: hidden;
   padding: 0px;
   padding-left: 1vw;
-  padding-right: 12px;
+  padding-right: 1vw;
   text-align: center;
 }
 
@@ -296,7 +302,7 @@ header li, a {
 }
 
 .card-button {
-  height: 35px;
+  height: 1.8vw;
   align-items: center;
   background-color: #0A66C2;
   border: 0;
@@ -304,15 +310,15 @@ header li, a {
   box-sizing: border-box;
   color: #ffffff;
   display: inline-flex;
-  font-size: 12px;
+  font-size: 0.6vw;
   font-weight: 550;
   justify-content: center;
   overflow: hidden;
   padding: 0px;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 1vw;
+  padding-right: 1vw;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 0.5vw;
   cursor: pointer;
 }
 
@@ -428,7 +434,7 @@ footer {
 }
 
 .footer-content .footer-center .footer-center-title {
-  font-size: 2.1rem;
+  font-size: 2vw;
   font-weight: 500;
   text-transform: capitalize;
   line-height: 3rem;
@@ -465,15 +471,21 @@ footer {
 .footer-content .footer-right .socials a{
   text-decoration: none;
   color: azure;
-  padding: 10px;
+  padding: 0.5vw;
 }
 
 .footer-content .footer-right .socials a i{
-  font-size: 1.5rem;
-  width: 25px;
+  font-size: 1.5vw;
+  width: 1vw;
   transition: color .4s ease;
 }
 
 .footer-content .footer-right .socials a:hover i{
   color: rgb(162, 173, 173);
+}
+
+@media only screen and (max-width: 1000px) {
+  .footer-content-img {
+    display: none;
+  }
 }
